@@ -5,5 +5,12 @@
     <Grid Margin="10">
         <TextBlock Text="Gęstość włosów (włosy/cm²):" Margin="0,0,0,10"/>
         <TextBox x:Name="PoleGestosc" Margin="0,20,0,311"/>
+
+        <TextBlock Text="Obwód głowy (cm):" Margin="0,60,0,10"/>
+        <TextBox x:Name="PoleObwodGlowy" Margin="0,80,0,244"/>
+
+
+
+
     </Grid>
 </Window>

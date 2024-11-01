@@ -10,7 +10,18 @@ namespace HairCalculator
 
         public MainWindow()
         {
+            InitializeComponent();
+            _glowa = new Glowa();
+        }
+
+        private void PrzyciskOblicz_Click(object sender, RoutedEventArgs e)
+        {
 
         }
+            private void PrzyciskResetuj_Click(object sender, RoutedEventArgs e)
+            {
+
+            }
+        }
     }
-}
+

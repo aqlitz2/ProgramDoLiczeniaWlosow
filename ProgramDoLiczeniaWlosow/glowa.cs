@@ -1,4 +1,4 @@
-﻿namespace HairCalculator
+﻿namespace HairCalculator 
 {
     public class Glowa
     {
@@ -10,5 +10,22 @@
         public double ObwodGlowy { get; set; }
         public double WysokoscCzola { get; set; }
 
+        public Glowa()
+        {
+            Gestosc = DomyslnaGestosc;
+            ObwodGlowy = DomyslnyObwod;
+            WysokoscCzola = DomyslnaWysokoscCzola;
+        }
+
+        public double ObliczLiczbeWlosow()
+        {
+            double powierzchniaGlowy = ObliczPowierzchnieGlowy();
+            return powierzchniaGlowy * Gestosc;
+        }
+
+        private double ObliczPowierzchnieGlowy()
+        {
+            return ObwodGlowy * WysokoscCzola;
+        }
     }
 }

@@ -4,16 +4,16 @@
         Title="Kalkulator Włosów" Height="400" Width="400">
     <Grid Margin="10">
         <TextBlock Text="Gęstość włosów (włosy/cm²):" Margin="0,0,0,10"/>
-        <TextBox x:Name="PoleGestosc" Margin="0,20,0,311"/>
+        <TextBox x:Name="PoleGestosc" Margin="0,20,0,284"/>
 
         <TextBlock Text="Obwód głowy (cm):" Margin="0,60,0,10"/>
-        <TextBox x:Name="PoleObwodGlowy" Margin="0,80,0,244"/>
+        <TextBox x:Name="PoleObwodGlowy" Margin="0,80,0,221"/>
 
         <TextBlock Text="Wysokość czoła (cm):" Margin="0,120,0,10"/>
-        <TextBox x:Name="PoleWysokoscCzola" Margin="0,140,0,188"/>
+        <TextBox x:Name="PoleWysokoscCzola" Margin="0,140,0,162"/>
 
         <Button Content="Oblicz" Margin="0,181,4,115" Click="PrzyciskOblicz_Click" RenderTransformOrigin="0.5,0.5"></Button>
-        <Button Content="Resetuj" Margin="0,217,4,76" Click="PrzyciskResetuj_Click" RenderTransformOrigin="0.5,0.5"></Button>
+        <Button Content="Resetuj" Margin="0,246,4,47" Click="PrzyciskResetuj_Click" RenderTransformOrigin="0.5,0.5"></Button>
 
         <TextBlock x:Name="TekstWynik" Margin="0,319,0,-33" FontWeight="Bold" TextWrapping="Wrap" RenderTransformOrigin="0.505,0.213"/>
     </Grid>

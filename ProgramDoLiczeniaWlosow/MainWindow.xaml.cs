@@ -16,12 +16,27 @@ namespace HairCalculator
 
         private void PrzyciskOblicz_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                _glowa.Gestosc = double.Parse(PoleGestosc.Text);
+                _glowa.ObwodGlowy = double.Parse(PoleObwodGlowy.Text);
+                _glowa.WysokoscCzola = double.Parse(PoleWysokoscCzola.Text);
 
+                double liczbaWlosow = _glowa.ObliczLiczbeWlosow();
+                TekstWynik.Text = $"Szacowana liczba włosów: {liczbaWlosow:F0}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Błąd danych wejściowych: " + ex.Message);
+            }
         }
             private void PrzyciskResetuj_Click(object sender, RoutedEventArgs e)
             {
-
-            }
+            PoleGestosc.Text = string.Empty;
+            PoleObwodGlowy.Text = string.Empty;
+            PoleWysokoscCzola.Text = string.Empty;
+            TekstWynik.Text = string.Empty;
+        }
         }
     }
 

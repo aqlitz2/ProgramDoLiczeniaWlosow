@@ -12,7 +12,9 @@
         <TextBlock Text="Wysokość czoła (cm):" Margin="0,120,0,10"/>
         <TextBox x:Name="PoleWysokoscCzola" Margin="0,140,0,188"/>
 
-        <Button Content="Oblicz" Margin="-1,181,1,130" Click="PrzyciskOblicz_Click" RenderTransformOrigin="0.5,0.5"></Button>
+        <Button Content="Oblicz" Margin="0,181,4,115" Click="PrzyciskOblicz_Click" RenderTransformOrigin="0.5,0.5"></Button>
+        <Button Content="Resetuj" Margin="0,217,4,76" Click="PrzyciskResetuj_Click" RenderTransformOrigin="0.5,0.5"></Button>
 
+        <TextBlock x:Name="TekstWynik" Margin="0,319,0,-33" FontWeight="Bold" TextWrapping="Wrap" RenderTransformOrigin="0.505,0.213"/>
     </Grid>
 </Window>

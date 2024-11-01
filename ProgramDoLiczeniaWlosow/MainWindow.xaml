@@ -9,7 +9,8 @@
         <TextBlock Text="Obwód głowy (cm):" Margin="0,60,0,10"/>
         <TextBox x:Name="PoleObwodGlowy" Margin="0,80,0,244"/>
 
-
+        <TextBlock Text="Wysokość czoła (cm):" Margin="0,120,0,10"/>
+        <TextBox x:Name="PoleWysokoscCzola" Margin="0,140,0,188"/>
 
 
     </Grid>

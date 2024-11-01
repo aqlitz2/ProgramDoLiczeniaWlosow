@@ -21,9 +21,12 @@ namespace HairCalculator
                 _glowa.Gestosc = double.Parse(PoleGestosc.Text);
                 _glowa.ObwodGlowy = double.Parse(PoleObwodGlowy.Text);
                 _glowa.WysokoscCzola = double.Parse(PoleWysokoscCzola.Text);
+                double procentowaRoznica = _glowa.ObliczProcentowaRoznica();
 
                 double liczbaWlosow = _glowa.ObliczLiczbeWlosow();
                 TekstWynik.Text = $"Szacowana liczba włosów: {liczbaWlosow:F0}";
+                TekstProcentowaRoznica.Text = $"Różnica w porównaniu do średniej: {procentowaRoznica:F2}%";
+   
             }
             catch (Exception ex)
             {
@@ -36,6 +39,7 @@ namespace HairCalculator
             PoleObwodGlowy.Text = string.Empty;
             PoleWysokoscCzola.Text = string.Empty;
             TekstWynik.Text = string.Empty;
+            TekstProcentowaRoznica.Text = string.Empty;
         }
         }
     }

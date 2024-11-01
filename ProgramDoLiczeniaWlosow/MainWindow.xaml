@@ -13,8 +13,9 @@
         <TextBox x:Name="PoleWysokoscCzola" Margin="0,140,0,162"/>
 
         <Button Content="Oblicz" Margin="0,181,4,115" Click="PrzyciskOblicz_Click" RenderTransformOrigin="0.5,0.5"></Button>
-        <Button Content="Resetuj" Margin="0,246,4,47" Click="PrzyciskResetuj_Click" RenderTransformOrigin="0.5,0.5"></Button>
+        <Button Content="Resetuj" Margin="2,223,2,70" Click="PrzyciskResetuj_Click" RenderTransformOrigin="0.5,0.5"></Button>
 
-        <TextBlock x:Name="TekstWynik" Margin="0,319,0,-33" FontWeight="Bold" TextWrapping="Wrap" RenderTransformOrigin="0.505,0.213"/>
+        <TextBlock x:Name="TekstWynik" Margin="-4,294,4,-8" FontWeight="Bold" TextWrapping="Wrap" RenderTransformOrigin="0.505,0.213"/>
+        <TextBlock x:Name="TekstProcentowaRoznica" Width="300" Margin="-5,325,85,-7"/>
     </Grid>
 </Window>

@@ -5,10 +5,12 @@
         private const double DomyslnaGestosc = 100;
         private const double DomyslnyObwod = 55;
         private const double DomyslnaWysokoscCzola = 15;
-
+        private const double SredniaLiczbaWlosow = 100000;
+        
         public double Gestosc { get; set; }
         public double ObwodGlowy { get; set; }
         public double WysokoscCzola { get; set; }
+
 
         public Glowa()
         {
@@ -27,5 +29,11 @@
         {
             return ObwodGlowy * WysokoscCzola;
         }
+        public double ObliczProcentowaRoznica()
+        {
+            double liczbaWlosow = ObliczLiczbeWlosow();
+            return ((liczbaWlosow - SredniaLiczbaWlosow) / SredniaLiczbaWlosow) * 100;
+        }
+
     }
 }
